@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754840483866",
+    "project_id": "emotional-cbe85",
+    "storage_bucket": "emotional-cbe85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754840483866:android:77e695c167c633808cb9a3",
+        "android_client_info": {
+          "package_name": "com.example.joi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBObBklqkvZP9bOn1nMOMeobZAFjt21eKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
