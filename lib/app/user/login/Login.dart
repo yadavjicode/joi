@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:joi/app/doctor/Login/DoctorLogin.dart';
 import 'package:joi/app/user/dashboard/dashboard.dart';
+import 'package:joi/app/user/login/GoogleSignin.dart';
 import 'package:joi/app/user/login/help.dart';
 import 'package:joi/app/user/testing/Field.dart';
 import 'package:joi/app/util/custom/customcolor/CustomColor.dart';
@@ -359,7 +360,7 @@ class _LoginState extends State<Login> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Feild(),
+                    builder: (context) => GoogleSignInScreen(),
                   ))
             },
             style: OutlinedButton.styleFrom(

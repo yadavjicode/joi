@@ -48,6 +48,7 @@ dependencies:
   google_places_flutter: ^2.0.8
   google_maps_polyline: ^1.0.3
   flutter_localization: ^0.2.0
+  google_sign_in: ^6.1.6
 
 dev_dependencies:
   flutter_test:
