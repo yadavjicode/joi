@@ -2,12 +2,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
+
 import 'package:joi/app/doctor/Login/DoctorLogin.dart';
 import 'package:joi/app/user/dashboard/dashboard.dart';
 import 'package:joi/app/user/login/GoogleSignin.dart';
-import 'package:joi/app/user/login/help.dart';
-import 'package:joi/app/user/testing/Field.dart';
+import 'package:joi/app/user/login/facebook_signin.dart';
+
 import 'package:joi/app/util/custom/customcolor/CustomColor.dart';
 import 'package:joi/app/util/custom/customsnackbar/CustomSnackbar.dart';
 
@@ -368,6 +368,29 @@ class _LoginState extends State<Login> {
                     borderRadius: BorderRadius.circular(8))),
             child: Text(
               "Login With Google",
+              style: TextStyle(
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ),
+        Container(
+          width: double.infinity,
+          height: 50,
+          margin: EdgeInsets.all(15),
+          child: OutlinedButton(
+            onPressed: () => {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FacebookLoginPage(),
+                  ))
+            },
+            style: OutlinedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8))),
+            child: Text(
+              "Login With facebook",
               style: TextStyle(
                 color: Colors.black,
               ),

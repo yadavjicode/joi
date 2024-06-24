@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:joi/app/firebase/FirebasePushNotification.dart';
 import 'package:joi/app/user/splash/SplashScreenA.dart';
 
@@ -18,7 +19,8 @@ Future<void> main() async {
         apiKey: "AIzaSyBObBklqkvZP9bOn1nMOMeobZAFjt21eKU",
         appId: "1:754840483866:android:77e695c167c633808cb9a3",
         messagingSenderId: "754840483866",
-        projectId: "emotional-cbe85"),
+        projectId: "emotional-cbe85",
+        storageBucket: "emotional-cbe85.appspot.com"),
   );
 
   FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
@@ -30,7 +32,6 @@ Future<void> main() async {
   PushNotification.init();
 
   FirebaseMessaging.onBackgroundMessage(_firebaseBackgroundMessage);
-
   runApp(const MyApp());
 }
 
